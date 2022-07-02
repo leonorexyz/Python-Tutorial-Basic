@@ -1,57 +1,64 @@
 '''
-data = int(input("Masukkan data : "))
+# Simple Input
+data = int(input("Insert data : "))
 print(data)
 '''
 
 '''
-angka1 = int(input("Masukkan angka 1 :"))
-angka2 = int(input("Masukkan angka 2 :"))
-tambah = angka1 + angka2
-kurang = angka1 - angka2
-kali = angka1 * angka2
-bagi = int(angka1 / angka2)
-pangkat = angka1 ** angka2
-print("Hasil penjumlahan dari " + str(angka1) + " dan " + str(angka2) + " = " + str(tambah))
-print("Hasil pengurangan dari " + str(angka1) + " dan " + str(angka2) + " = " + str(kurang))
-print("Hasil perkalian dari " + str(angka1) + " dan " + str(angka2) + " = " + str(kali))
-print("Hasil pembagian dari " + str(angka1) + " dan " + str(angka2) + " = " + str(bagi))
-print("Hasil pangkat dari " + str(angka1) + " dan " + str(angka2) + " = " + str(pangkat))
+# Basic Operator
+number1 = int(input("Insert number 1 :"))
+number2 = int(input("Insert number2 2 :"))
+addition = number1 + number2
+substract = number1 - number2
+multiply = number1 * number2
+divide = int(number1 / number2)
+power = number1 ** number2
+print("Addition result of " + str(number1) + " and " + str(number2) + " = " + str(addition))
+print("Substraction result of " + str(number1) + " and " + str(number2) + " = " + str(substract))
+print("Multiplication result of " + str(number1) + " and " + str(number2) + " = " + str(multiply))
+print("Division result of " + str(number1) + " and " + str(number2) + " = " + str(divide))
+print("Power of " + str(number1) + " and " + str(number2) + " = " + str(power))
 '''
 
 '''
-angka1 = 5
-angka2 = 4
-resultLebihKecil = angka1 < angka2
-resultLebihGede = angka1 > angka2
-resultSamaDengan = angka1 == angka2
-resultTidakSamaDengan = angka1 != angka2
-resultLebihKecilSamaDengan = angka1 <= angka2
-resultLebihGedeSamaDengan = angka1 >= angka2
-print(resultLebihKecil)
-print(resultLebihGede)
-print(resultSamaDengan)
-print(resultTidakSamaDengan)
-print(resultLebihKecilSamaDengan)
-print(resultLebihGedeSamaDengan)
+# Comparison Operator
+number1 = 5
+number2 = 4
+lessThan = number1 < number2
+greaterThan = number1 > number2
+equalTo = number1 == number2
+notEqualTo = number1 != number2
+lessThanEqual = number1 <= number2
+greaterThanEqual = number1 >= number2
+print(lessThan)
+print(greaterThan)
+print(EqualTo)
+print(notEqualTo)
+print(lessThanEqual)
+print(greaterThanEqual)
 '''
 
 '''
-kondisi1 = True
-kondisi2 = False
-print(kondisi1 and kondisi2)
-print(kondisi1 or kondisi2)
-print(not kondisi1)
-print(not kondisi2)
-print(kondisi1 and not kondisi2)
-print(not kondisi1 or kondisi2)
+# Logical Operator
+condition1 = True
+condition2 = False
+print(condition1 and condition2)
+print(condition1 or condition2)
+print(not condition1)
+print(not condition2)
+print(condition1 and not condition2)
+print(not condition1 or condition2)
 '''
 
 '''
+# Assignment Operator
+# a = a+1 can be written as a+=1
 a = 2
 a += 1
 print(a)
 '''
 
+# Multiple Lines Output
 print(r"""
 Nama : Test
 Hobi : Anime

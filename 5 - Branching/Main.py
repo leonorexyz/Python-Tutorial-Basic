@@ -1,17 +1,18 @@
-angka = int(input("Masukkan angka : "))
-if(angka % 2 == 0):
-    print("Ini bilangan genap")
+# Branching - A way to decide an argument / decision
+number = int(input("Masukkan number : "))
+if(number % 2 == 0):
+    print("This is an even number")
 else:
-    print("Ini bilangan ganjil")
+    print("This is an odd number")
 
-nilai = 32
-if(nilai >= 80):
+marks = 90
+if(marks >= 80):
     print("A")
-elif(nilai >= 70):
+elif(marks >= 70):
     print("B")
-elif(nilai >= 56):
+elif(marks >= 56):
     print("C")
-elif(nilai >= 40):
+elif(marks >= 40):
     print("D")
 else:
     print("E")
