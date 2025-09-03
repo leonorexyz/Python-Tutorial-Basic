@@ -1,12 +1,14 @@
 '''
 # Branching - A way to decide an argument / decision
-number = int(input("Masukkan number : "))
+number = int(input("Insert number : "))
 if(number % 2 == 0):
     print("This is an even number")
 else:
     print("This is an odd number")
+'''
 
-marks = 90
+'''    
+marks = int(input("Insert number : "))
 if(marks >= 80):
     print("A")
 elif(marks >= 70):
@@ -19,6 +21,7 @@ else:
     print("E")
 '''
 
+'''
 #  Exercise - Simple Calculator
 number1 = int(input("Insert number 1 : ")) #operand
 operator = input("Insert operator : ")
@@ -32,4 +35,4 @@ if(operator == "*"):
     print(f"Result : {number1*number2}")
 if(operator == "/"):
     print(f"Result : {number1/number2}")
-
+'''

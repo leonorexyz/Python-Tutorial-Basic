@@ -1,6 +1,6 @@
 '''
 # Basic String Manipulation
-name = "Test" 
+name = "Testing" 
 length = len(name) #counting length of a string variable
 existsCharacter = "st" in name #check on the condition of a pattern exists in a string variable
 notExistsCharacter = "s" not in name #check on the condition of a pattern not exists in a string variable
@@ -16,7 +16,7 @@ print(existsCharacter)
 print(notExistsCharacter)
 print(nameRepetition)
 print(indexReverse)
-print(indexGenap)
+print(indexEven)
 print(min(name)) #to get the minimum character of a string variable
 print(max(name)) #to get the maximum character of a string variable
 print(ascii_code)
@@ -55,6 +55,7 @@ gen1 = "Moona".center(20,"-") #to set the offset on the center with the followin
 print(gen1)
 '''
 
+'''
 number = 2003.1573 
 percentage = 0.4571
 number1 = 10
@@ -64,3 +65,4 @@ print(f"number : {number:,}") #to add a group sepator
 print(f"number : {number:.2f}") #to format the decimal with 2 precision digits
 print(f"Percentage : {percentage:.2%}") #to format the percentage with 2 precision digits
 print(f"Hasil Perkalian : {number1*number2}") #to calculate inside a print format
+'''

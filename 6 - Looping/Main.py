@@ -9,20 +9,26 @@ for i in range(0,n+1):
     if(i!=0):
         result *= i
 print(result)
+'''
 
-n = 10
+'''
+n = 5
 for i in range(1,n+1):
     for j in range(i):
         print("*", end=" ")
     print()
+'''
 
+'''
 n = 5
 result = 1
 while n: #if n is <1 the condition will break, remember in programming 1 = True, 0 = False
     result *= n
     n -= 1
 print(result)
+'''
 
+'''
 fact = int(input("Insert number : "))
 result = 1
 for i in range(fact,0,-1):

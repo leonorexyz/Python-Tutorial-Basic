@@ -28,5 +28,5 @@ print(type(d))
 # Casting - ways to convert data types
 a = 1
 b = "1"
-c = str(a)+b
+c = a+int(b)
 print(c)

@@ -7,7 +7,7 @@ print(data)
 '''
 # Basic Operator
 number1 = int(input("Insert number 1 :"))
-number2 = int(input("Insert number2 2 :"))
+number2 = int(input("Insert number 2 :"))
 addition = number1 + number2
 substract = number1 - number2
 multiply = number1 * number2
@@ -32,7 +32,7 @@ lessThanEqual = number1 <= number2
 greaterThanEqual = number1 >= number2
 print(lessThan)
 print(greaterThan)
-print(EqualTo)
+print(equalTo)
 print(notEqualTo)
 print(lessThanEqual)
 print(greaterThanEqual)
@@ -58,8 +58,10 @@ a += 1
 print(a)
 '''
 
+'''
 # Multiple Lines Output
 print(r"""
 Nama : Test
 Hobi : Anime
 """)
+'''
