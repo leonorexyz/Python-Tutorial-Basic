@@ -53,5 +53,9 @@ print(nilai)
 nilai_copy = nilai.copy()
 print(nilai_copy)
 
+# Data Enumeration
+data_list = ["Luna","Raiden","Zhongli","Venti"]
+for index, data in enumerate(data_list):
+    print(f"Index ke-{index} adalah {data}")
 
 

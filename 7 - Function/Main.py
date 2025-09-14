@@ -1,5 +1,5 @@
 # Function - a way to write a subalgorithm that can be called from main function it also can pass parameters and return values
-
+'''
 def square(l):
     area = l ** 2
     return area
@@ -81,3 +81,86 @@ while True:
     decision = input("Do you want to use program again (Y/N) ? ")
     if(decision == "N"):
         break
+'''
+
+# args - multiple parameters
+'''
+def sumOfNumber(*data):
+    sum = 0
+    for x in data:
+        sum += x
+        print(sum)
+
+sumOfNumber(1,2,3,4,5)
+'''
+'''
+# kwargs - multiple parameters with key value pair
+def personDetail(**data):
+    for key,value in data.items():
+        print(f"{key} : {value}")
+
+personDetail(name="John",age=20,city="New York")
+personDetail(name="Doe",age=25,city="Los Angeles",job="Engineer")
+'''
+
+'''
+# combine args and kwargs
+def math(*nums, **operator):
+    result = 0
+    if(operator["operation"] == "add"):
+        for x in nums:
+            result += x
+    elif(operator["operation"] == "subtract"):
+        result = nums[0]
+        for x in nums[1:]:
+            result -= x
+    elif(operator["operation"] == "multiply"):
+        result = 1
+        for x in nums:
+            result *= x
+    elif(operator["operation"] == "divide"):
+        result = nums[0]
+        for x in nums[1:]:
+            result /= x
+    return result
+
+result = math(1,2,3,4,5,operation="add")
+print(result)
+'''
+
+# lambda function - a function that can be written in one line
+# syntax : lambda parameters : expression
+square = lambda x : x**2
+print(square(5))
+
+power = lambda x, y : x**y
+print(f"2^3 = {power(2,3)}")
+
+# lambda example list sorting
+# sorting without lambda
+names = ["John", "Doe", "Alice", "Bob"]
+def nameLength(name):
+    return len(name)
+
+names.sort(key=nameLength)
+print(names)
+
+# sorting with lambda
+names = ["John", "Doe", "Alice", "Bob"]
+names.sort(key=lambda name: len(name))
+print(names)
+
+# lambda filter
+numbers = [1,2,3,4,5,6,7,8,9,10]
+evenNumbers = list(filter(lambda x: x%2==0, numbers))
+print(evenNumbers)
+
+# lambda with curried function
+def square(n):
+    return lambda x: x**n
+
+square2 = square(2)
+square3 = square(3)
+print(square2(5)) # 5^2
+print(square3(5)) # 5^3
+print(square(4)(5)) # 5^4

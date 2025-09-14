@@ -1,6 +1,8 @@
 # Looping - A way to iterate something
 # for loop, for i in range(n), let's say n is 11 so it will iterate from 0-10, for loop is used when we know the range, you can also define the start step, end step (remember it's always n+1), and the step
 # while loop, while loop is used when we don't know how much we want to iterate, it'll always loop until the condition break
+# continue, break, pass
+# pass - won't be executed, continue - skip the current iteration, break - break the loop
 
 '''
 n = 10
@@ -40,6 +42,7 @@ for i in range(fact,0,-1):
 print(result)
 '''
 
+'''
 # fast way to implement triangle star - exercise
 print("Choose Shape".center(20,"-"))
 print("1. Square")
@@ -64,3 +67,29 @@ if(shape == 4):
         print(" "*(size-(int(size)-abs(i-size))),end="")
         # print((int(size)-abs(i-size)))
         # print(size-(int(size)-abs(i-size)))
+'''
+
+number = 0
+
+'''
+while number < 5:
+    number += 1
+    if number == 3:
+        pass # won't be executed for function and class that not implemented (e.g def(): pass, class: pass)
+
+    print(number)
+'''
+'''
+while number < 5:
+    number += 1
+    if number == 3:
+        continue # skip the current iteration
+
+    print(number)
+'''
+while number < 5:
+    number += 1
+    if number == 3:
+        break # break the loop
+
+    print(number)
